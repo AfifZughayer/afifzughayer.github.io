@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1, p {
+    margin: 0;
+    opacity: 0;
+    animation: enterAnim 1s ease-out forwards;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -1px;
+    animation-delay: 0.2s;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation-delay: 0.8s;
+}
+
+@keyframes enterAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
